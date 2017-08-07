@@ -385,7 +385,8 @@ i{
 	}
  	.window1, .window2, .window3, .window4, .window5, .window6, .window7,#window8
  	{
- 		margin: 20px, auto;
+ 	
+ 		margin:20px auto;
  	}
 
 }
@@ -400,18 +401,22 @@ i{
 	}
 }
 /* FONTS */
-
 @font-face
+
 {
+
 font-family: Abril Fatface;
+
 src:url(../fonts/AbrilFatface-Regular.otf);
 }
 
 @font-face
+
 {
+
 font-family: Arbutus;
+
 src:url(../fonts/Arbutus-Regular.ttf);
 }
-
 
 
