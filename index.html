@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Weather</title>
+  <meta name="description" content="Weather in big towns">
+  <meta name="author" content="Dawid_Malec">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Abril+Fatface&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Arbutus&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+
+</head>
+<body>
+<!-- PRELOADER -->
+<div id="loader-wrapper">
+    <div class="load">
+      <hr/><hr/><hr/><hr/>
+    </div>
+</div>
+<!-- Main Section -->
+<div class = "main">
+  <div class = "container" >
+    <div class =" row">
+        <div class = "one columns"> 
+          <div id = "town"></div>
+        </div>
+        <div class = "one columns"> 
+          <div id = "clock"></div>
+        </div>
+        <div class = "two columns">
+          <div id = "day0"></div>
+        </div>
+        <div class = "two columns">
+          <div id = "day1"></div>
+        </div>
+        <div class = "two columns">
+          <div id = "day2"></div>
+        </div>
+        <div class = "two columns">
+          <div id = "day3"></div>
+        </div>
+        <div class = "two columns">
+          <div id = "day4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Hero Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="hero">
+    <div class="container">
+      <div class="row">
+
+        <div class="four columns">
+          <div class="window1"><button id = "London" class = "button button-primary u-full-width">LONDON</button></div>
+        </div>
+
+        <div class="four columns">
+          <div class="window2"><button id = "Amsterdam" class = "button button-primary u-full-width">AMSTERDAM</button></div>
+        </div>
+
+        <div class="four columns">
+          <div class="window3"><button id = "Warsaw" class = "button button-primary u-full-width">WARSAW</button></div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="four columns">
+          <div class="window4"><button id = "Prague" class = "button button-primary u-full-width">PRAGUE</button></div>
+        </div>
+
+        <div class="four columns">
+          <div class="window5"><button id = "Vienna" class = "button button-primary u-full-width">VIENNA</button></div>
+        </div>
+
+        <div class="four columns">
+          <div class="window6"><button id = "Tokyo" class = "button button-primary u-full-width">TOKYO</button></div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="four columns">
+          <div class="window7"><button id = "Berlin" class = "button button-primary u-full-width">BERLIN</button></div>
+        </div>
+
+        <div class="eight columns">
+          <div id ="window8"> <button id = "empty1" class = "button button-primary u-full-width empty">FIND YOUR TOWN</button></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- Popup section ---------------------------------------------------->
+<div class = "blackwall">
+  <div class = "container">
+    <div class = "row">
+      <div id = "popup">
+          <div class = "popup-header">
+             <h1>FIND YOUR TOWN</h1>
+              <a class = "hider">[X]</a>
+</a>
+          </div>
+        <div class = "popup-body">
+        <form>
+          <p id = 'error'></p>
+          <input class="u-full-width" placeholder="Town" id="town_search" name="town_search" type="text"></br>
+         <div class="submit u-full-width" value="enter" id="search">SUBMIT</div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Random section---------------------------------------------------->
+<div class="random">
+  <div class="container">
+    <div class="row">
+      <div id = 'random0' class="two columns">RANDOM</div>
+      <div id = 'random1' class="two columns">RANDOM</div>
+      <div id = 'random2' class="two columns">RANDOM</div>
+      
+      <div class="six columns icons">
+       <a class = "fb" href="https://www.facebook.com/mlodymistrzem"> <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i></a>
+       <a class = "git" href="https://github.com/dawidmalec"> <i class = "fa fa-github-square fa-4x" aria-hidden="true"></i>
+       <a class = "twitter" href="https://twitter.com/?lang=pl"> <i class = "fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
+       </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Footer ---------------------------------------------------->
+  <div class="footer">
+  <p>Copyright &copy; Malec Dawid - 2017</p>
+</div>
+ 
+  <!-- JS ---------------------------------------------------->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/weather.js"></script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
+
