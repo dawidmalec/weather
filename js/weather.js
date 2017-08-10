@@ -270,11 +270,6 @@ $(window).ready(function() {
       }, 2500);
 });
 
-jQuery(document).ready(function($){
-  op = function(obj) {
-    $(obj).stop().slideToggle();
-    };
-});
 
 // Blokada Entera //
 $(document).keydown(function(e){
